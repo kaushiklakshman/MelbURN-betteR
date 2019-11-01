@@ -4,8 +4,17 @@
     <title>betteR</title>
     <meta charset="utf-8" />
     <meta name="author" content="Kaushik Lakshman" />
-    <link href="libs/remark-css/default.css" rel="stylesheet" />
-    <link href="libs/remark-css/default-fonts.css" rel="stylesheet" />
+    <link href="libs/remark-css-0.0.1/default.css" rel="stylesheet" />
+    <link href="libs/remark-css-0.0.1/default-fonts.css" rel="stylesheet" />
+    <script src="libs/htmlwidgets-1.3/htmlwidgets.js"></script>
+    <script src="libs/jquery-1.12.4/jquery.min.js"></script>
+    <link href="libs/datatables-css-0.0.0/datatables-crosstalk.css" rel="stylesheet" />
+    <script src="libs/datatables-binding-0.8/datatables.js"></script>
+    <link href="libs/dt-core-1.10.16/css/jquery.dataTables.min.css" rel="stylesheet" />
+    <link href="libs/dt-core-1.10.16/css/jquery.dataTables.extra.css" rel="stylesheet" />
+    <script src="libs/dt-core-1.10.16/js/jquery.dataTables.min.js"></script>
+    <link href="libs/crosstalk-1.0.0/css/crosstalk.css" rel="stylesheet" />
+    <script src="libs/crosstalk-1.0.0/js/crosstalk.min.js"></script>
   </head>
   <body>
     <textarea id="source">
@@ -19,63 +28,66 @@ class: center, middle, inverse, title-slide
 ---
 
 
-background-image: url(https://upload.wikimedia.org/wikipedia/commons/b/be/Sharingan_triple.svg)
+# About me &amp; today
 
+- Senior Data Science Manager @ Betfair 
 
+- Massive fan of R &amp; the community around it
 
-???
+- Always learning &amp; always looking to improve
 
-Image credit: [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Sharingan_triple.svg)
+- Want to share my experiences and learnings in the pursuit of the above motto
 
----
-class: center, middle
+- Typically look back at my code from 6 months ago and simultaneously feel both 
 
-# xaringan
-
-### /ʃaː.'riŋ.ɡan/
-
----
-class: inverse, center, middle
-
-# Get Started
+  - Disgusted at the old code
+  
+  - Very happy about how far things have come
 
 ---
 
-# Hello World
+# Make your R code spark joy!
+.center[
+&lt;img src = "imgs/marie_kondo.png"&gt;
+]
+---
 
-Install the **xaringan** package from [Github](https://github.com/yihui/xaringan):
 
+# The basics
+
+- Comments
+
+  - Comment as much as you can 
+  
+  - Think about others who may read or run your code 
+  
+  - If you don't care about others, think about future you, she/he will definitely appreciate it
+
+- Have a consistent stlye guide 
+
+  - Tidyverse style guide
+  
+  - Google style guide 
+  
+  - Whatever works for you, but consistent 
+
+
+---
+
+# Tidyverse style guide
+
+- Names 
+
+  - Meaningful names for variables, functions, files 
+  
+  - Recommended that object names be nouns and function names be verbs 
+  
 
 ```r
-devtools::install_github("yihui/xaringan")
+## Sparks Joy 
 ```
 
---
 
-You are recommended to use the [RStudio IDE](https://www.rstudio.com/products/rstudio/), but you do not have to.
-
-- Create a new R Markdown document from the menu `File -&gt; New File -&gt; R Markdown -&gt; From Template -&gt; Ninja Presentation`;&lt;sup&gt;1&lt;/sup&gt;
-
---
-
-- Click the `Knit` button to compile it;
-
---
-
-- or use the [RStudio Addin](https://rstudio.github.io/rstudioaddins/)&lt;sup&gt;2&lt;/sup&gt; "Infinite Moon Reader" to live preview the slides (every time you update and save the Rmd document, the slides will be automatically reloaded in RStudio Viewer.
-
-.footnote[
-[1] 中文用户请看[这份教程](http://slides.yihui.name/xaringan/zh-CN.html)
-
-[2] See [#2](https://github.com/yihui/xaringan/issues/2) if you do not see the template or addin in RStudio.
-]
-
----
-background-image: url(https://github.com/yihui/xaringan/releases/download/v0.0.2/karl-moustache.jpg)
-background-position: 50% 50%
-class: center, bottom, inverse
-
-# You only live once!
 
 ---
 
@@ -327,6 +339,9 @@ DT::datatable(
   fillContainer = FALSE, options = list(pageLength = 8)
 )
 ```
+
+<div id="htmlwidget-35078eea3fa782f2242b" style="width:100%;height:auto;" class="datatables html-widget"></div>
+<script type="application/json" data-for="htmlwidget-35078eea3fa782f2242b">{"x":{"filter":"none","fillContainer":false,"data":[["1","2","3","4","5","6","7","8","9","10"],[5.1,4.9,4.7,4.6,5,5.4,4.6,5,4.4,4.9],[3.5,3,3.2,3.1,3.6,3.9,3.4,3.4,2.9,3.1],[1.4,1.4,1.3,1.5,1.4,1.7,1.4,1.5,1.4,1.5],[0.2,0.2,0.2,0.2,0.2,0.4,0.3,0.2,0.2,0.1],["setosa","setosa","setosa","setosa","setosa","setosa","setosa","setosa","setosa","setosa"]],"container":"<table class=\"display\">\n  <thead>\n    <tr>\n      <th> <\/th>\n      <th>Sepal.Length<\/th>\n      <th>Sepal.Width<\/th>\n      <th>Petal.Length<\/th>\n      <th>Petal.Width<\/th>\n      <th>Species<\/th>\n    <\/tr>\n  <\/thead>\n<\/table>","options":{"pageLength":8,"columnDefs":[{"className":"dt-right","targets":[1,2,3,4]},{"orderable":false,"targets":0}],"order":[],"autoWidth":false,"orderClasses":false,"lengthMenu":[8,10,25,50,100]}},"evals":[],"jsHooks":[]}</script>
 
 ---
 

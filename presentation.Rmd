@@ -12,64 +12,73 @@ output:
       countIncrementalSlides: false
 ---
 
-background-image: url(https://upload.wikimedia.org/wikipedia/commons/b/be/Sharingan_triple.svg)
+# About me & today
 
-```{r setup, include=FALSE}
-options(htmltools.dir.version = FALSE)
-```
+- Senior Data Science Manager @ Betfair 
 
-???
+- Massive fan of R & the community around it
 
-Image credit: [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Sharingan_triple.svg)
+- Always learning & always looking to improve
 
----
-class: center, middle
+- Want to share my experiences and learnings in the pursuit of the above motto
 
-# xaringan
+- Typically look back at my code from 6 months ago and simultaneously feel both 
 
-### /ʃaː.'riŋ.ɡan/
-
----
-class: inverse, center, middle
-
-# Get Started
+  - Disgusted at the old code
+  
+  - Very happy about how far things have come
 
 ---
 
-# Hello World
-
-Install the **xaringan** package from [Github](https://github.com/yihui/xaringan):
-
-```{r eval=FALSE, tidy=FALSE}
-devtools::install_github("yihui/xaringan")
-```
-
---
-
-You are recommended to use the [RStudio IDE](https://www.rstudio.com/products/rstudio/), but you do not have to.
-
-- Create a new R Markdown document from the menu `File -> New File -> R Markdown -> From Template -> Ninja Presentation`;<sup>1</sup>
-
---
-
-- Click the `Knit` button to compile it;
-
---
-
-- or use the [RStudio Addin](https://rstudio.github.io/rstudioaddins/)<sup>2</sup> "Infinite Moon Reader" to live preview the slides (every time you update and save the Rmd document, the slides will be automatically reloaded in RStudio Viewer.
-
-.footnote[
-[1] 中文用户请看[这份教程](http://slides.yihui.name/xaringan/zh-CN.html)
-
-[2] See [#2](https://github.com/yihui/xaringan/issues/2) if you do not see the template or addin in RStudio.
+# Make your R code spark joy!
+.center[
+<img src = "imgs/marie_kondo.png">
 ]
+---
+
+
+# The basics
+
+- Comments
+
+  - Comment as much as you can 
+  
+  - Think about others who may read or run your code 
+  
+  - If you don't care about others, think about future you, she/he will definitely appreciate it
+
+- Have a consistent stlye guide 
+
+  - Tidyverse style guide
+  
+  - Google style guide 
+  
+  - Whatever works for you, but consistent 
+
 
 ---
-background-image: url(`r xaringan:::karl`)
-background-position: 50% 50%
-class: center, bottom, inverse
 
-# You only live once!
+# Tidyverse style guide
+
+- Names 
+
+  - Meaningful names for variables, functions, files 
+  
+  - Recommended that object names be nouns and function names be verbs 
+  
+  - Underscores instead of dots 
+  
+```{r, echo=TRUE}
+## Sparks joy 
+weather_data 
+weather_analysis.R
+clean_weather_data()
+
+## Does not spark joy
+w_df 
+wAnalysis.R
+weather.cleaner()
+```
 
 ---
 
