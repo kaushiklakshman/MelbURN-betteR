@@ -1,6 +1,6 @@
 ---
 title: "betteR"
-subtitle: "Learnings from an evreyday pursuit of wanting to write better R code"
+subtitle: "Learnings from an everyday pursuit of wanting to write better R code"
 author: "Kaushik Lakshman"
 output:
   xaringan::moon_reader:
