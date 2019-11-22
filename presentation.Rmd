@@ -16,11 +16,19 @@ output:
 
 - Lead the Data Science team @ Betfair 
 
+--
+
 - Massive fan of R & the community around it
+
+--
 
 - Always learning & always looking to improve
 
+--
+
 - Want to share my experiences and learnings in the pursuit of the above motto
+
+--
 
 - Typically look back at my code from 6 months ago and simultaneously feel both 
 
@@ -52,8 +60,10 @@ class: inverse, middle, center
   - Think about others who may read or run your code 
   
   - If you don't care about others, think about future you, she/he will definitely appreciate it
+  
+--
 
-- Have a consistent stlye guide 
+- Have a consistent style guide 
 
   - Tidyverse style guide
   
@@ -117,6 +127,8 @@ setwd("C:/some_folder/some_subfolder")
 rm(list = ls())
 ```
 
+--
+
 - Working directory
 
   - Specific to your computer
@@ -124,7 +136,9 @@ rm(list = ls())
   - What happenes if your teammate wants to run this? What happens if you want to run the same analysis on another machine?
   
   - Solution -> R Studio Projects; Here package
-  
+
+--
+
 - Clean environment 
 
   - `rm` only removes objects from your environment, not loaded packages
@@ -166,7 +180,11 @@ class: inverse, middle, center
 
 - If you write the same code three times, put it in a function 
 
+--
+
 - If you write the same function three times put it in a package
+
+--
 
 - Reduce, Reuse and Refactor & make Captain rPlanet happy
 
@@ -221,6 +239,8 @@ get_max_by <- function(.data, .variable, .by) {
 ## This will error out
 starwars %>% get_max_by(mass, .by = gender)
 ```
+
+--
 
 - Initially solved by `quo`, `enquo`, and `sym` pattern; works but its complex 
 
@@ -527,9 +547,15 @@ features_to_model <- bake(model_recipe,
 
 - Write code keeping in mind others, or future versions of you 
 
+--
+
 - Write code to be lazy & not have to rewrite stuff later 
 
+--
+
 - Write code that makes you feel like you are improving 
+
+--
 
 - Write code that sparks joy 
 
@@ -544,6 +570,6 @@ class: center, middle
 
 # Thanks!
 
-Slides available on <a href = "https://github.com/kaushiklakshman/MelbURN-betteR"> my github </a>
+Slides available on <a href = "https://github.com/kaushiklakshman/MelbURN-betteR"> github.com/kaushiklakshman </a>
 
 For any questions, hit me up at `kaushiklakshman@gmail.com`
